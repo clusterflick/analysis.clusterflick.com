@@ -1,5 +1,5 @@
 {
-  "name": "clusterflick.com",
+  "name": "analysis.clusterflick.com",
   "private": true,
   "scripts": {
     "dev": "next dev",
