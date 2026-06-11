@@ -24,7 +24,7 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version-file: .node-version
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
         with:
           static_site_generator: next
           generator_config_file: ./next.config.ts
@@ -47,7 +47,7 @@ jobs:
           out-file-path: "matched-data"
       - run: npm run process-combined-data
       - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: ./out
 
@@ -61,4 +61,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
