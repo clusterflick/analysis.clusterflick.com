@@ -928,8 +928,8 @@ export default function AboutContent() {
           </Stack.Item>
           <Stack.Item>
             <Text>
-              The code for this site, the processing pipeline, and data
-              generated is all open source and{" "}
+              The code for this site and the processing pipeline behind it is
+              open source under the MIT licence, and{" "}
               <ExternalLink href="https://github.com/clusterflick/">
                 available on Github
               </ExternalLink>
@@ -937,7 +937,12 @@ export default function AboutContent() {
             </Text>
             <Text>
               The data is refreshed early every morning and available in
-              normalized form in different formats depending on your needs:
+              normalized form in two formats, both free to use — including
+              commercially — under{" "}
+              <ExternalLink href="https://clusterflick.com/data-licence">
+                CC BY 4.0
+              </ExternalLink>{" "}
+              as long as you credit Clusterflick:
             </Text>
             <ul>
               <li>
@@ -946,16 +951,20 @@ export default function AboutContent() {
                 </ExternalLink>
               </li>
               <li>
-                <ExternalLink href="https://github.com/clusterflick/data-combined/releases/latest">
-                  Data combined by movie
-                </ExternalLink>
-              </li>
-              <li>
                 <ExternalLink href="https://github.com/clusterflick/data-calendar/releases/latest">
                   ICS calendar file per venue
                 </ExternalLink>
               </li>
             </ul>
+            <Text>
+              Every other repository in the pipeline is an internal build
+              artifact: published because the pipeline runs in the open, not
+              offered for reuse, and unlicensed. See the{" "}
+              <ExternalLink href="https://clusterflick.com/data-licence">
+                data licence
+              </ExternalLink>{" "}
+              for the full terms and the credit to use.
+            </Text>
           </Stack.Item>
           <Stack.Item>
             <Message bordered>
