@@ -31,7 +31,7 @@ jobs:
           generator_config_file: ./next.config.ts
       - run: npm ci
       - name: Download combined data
-        uses: clusterflick/release-downloader@v2
+        uses: clusterflick/release-downloader@v4
         with:
           token: ${{ secrets.PAT }}
           repository: "clusterflick/data-combined"
@@ -39,7 +39,7 @@ jobs:
           fileName: "*"
           out-file-path: "combined-data"
       - name: Download matched data
-        uses: clusterflick/release-downloader@v2
+        uses: clusterflick/release-downloader@v4
         with:
           token: ${{ secrets.PAT }}
           repository: "clusterflick/data-matched"
